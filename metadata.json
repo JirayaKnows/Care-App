@@ -1,0 +1,8 @@
+{
+  "name": "Copy of Care App",
+  "description": "Care is a comprehensive mobile-first web app for medical assistance. Find doctors, book appointments, order from a pharmacy, get health tips, and locate nearby hospitals all in one place. Your one-stop platform for healthcare services.",
+  "requestFramePermissions": [
+    "geolocation",
+    "camera"
+  ]
+}

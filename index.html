@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Care - Your Personal Health Assistant"
+    />
+    <title>Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#14B8A6', // Teal 500
+                '50': '#F0FDFA',
+                '100': '#CCFBF1',
+                '200': '#99F6E4',
+                '300': '#5EEAD4',
+                '400': '#2DD4BF',
+                '500': '#14B8A6',
+                '600': '#0D9488',
+                '700': '#0F766E',
+                '800': '#115E59',
+                '900': '#134E4A',
+                '950': '#042f2e'
+              },
+              secondary: {
+                  DEFAULT: '#FB923C', // Orange 400
+                  '50': '#FFF7ED',
+                  '100': '#FFEDD5',
+                  '200': '#FED7AA',
+                  '300': '#FDBA74',
+                  '400': '#FB923C',
+                  '500': '#F97316',
+                  '600': '#EA580C',
+                  '700': '#C2410C',
+                  '800': '#9A3412',
+                  '900': '#7C2D12',
+                  '950': '#431407'
+              }
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.4s ease-in-out',
+              'slide-in-up': 'slideInUp 0.5s ease-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: 0 },
+                '100%': { opacity: 1 },
+              },
+              slideInUp: {
+                '0%': { transform: 'translateY(20px)', opacity: 0 },
+                '100%': { transform: 'translateY(0)', opacity: 1 },
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-100 dark:bg-gray-900">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
